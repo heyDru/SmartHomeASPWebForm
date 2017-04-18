@@ -1,0 +1,105 @@
+﻿body {
+}
+
+.container {
+    background-color: rgba(160,224,220,0.5);
+    min-height: 960px;
+}
+
+.devicePanel {
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 15px;
+    /*margin: auto;*/
+    border-radius: 9px;
+    background-color:rgba(47,184,224,0.5);
+    /*padding: 10px;*/
+    min-height: 270px;
+}
+
+.i-am-centered {
+    margin: auto;
+    /*max-width: 300px;*/
+}
+
+.basePanel {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+    .basePanel div {
+        margin-top: 10px;
+    }
+
+.switchButton {
+    padding: 7px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(91,90,89,0.4);
+}
+
+.applyButton {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.deleteButton {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.textInputNumber {
+    text-align: center;
+    min-width: 75px;
+    border: solid 1px white;
+    border-radius: 7px;
+    font-size: 16px;
+    padding-left: 10px;
+
+}
+
+/*.temperatureInput {
+    text-align: center;
+    min-width: 75px;
+    border: solid 1px white;
+    border-radius: 7px;
+    font-size: 16px;
+    padding-left: 10px;
+}*/
+
+.innerCtr {
+    margin-top: 20px;
+    border: solid 1px #7992b7;
+    border-radius: 5px;
+    padding-bottom:10px;
+    padding-top:10px;
+}
+
+.kW {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.channelDropList{
+    width:250px;
+}
+
+.consumptionTextBox{
+    margin:auto;
+}
+
+.addButton{
+    margin-left:145px;
+}
+.validatorLabel{
+    margin-left:123px;
+    color:orangered;
+}
+
+.valueConsumtion{
+    margin:auto;
+}
+.deviceTypeLabel{
+    margin:auto;
+
+}

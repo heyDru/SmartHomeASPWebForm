@@ -1,0 +1,97 @@
+{
+  "$type": "System.Collections.Generic.List`1[[HeyHomeModel.Model.Implementation.Device, HeyHomeModel]], mscorlib",
+  "$values": [
+    {
+      "$type": "HeyHomeModel.Model.Implementation.Lamp, HeyHomeModel",
+      "Intensity": 7,
+      "Id": 761249,
+      "Consumption": 2.0,
+      "TurnOn": true,
+      "Type": "LAMP"
+    },
+    {
+      "$type": "HeyHomeModel.Model.Implementation.Heater, HeyHomeModel",
+      "Temperature": 16,
+      "Id": 617124,
+      "Consumption": 8.0,
+      "TurnOn": true,
+      "Type": "HEATER"
+    },
+    {
+      "$type": "HeyHomeModel.Model.Implementation.TV, HeyHomeModel",
+      "ChannelList": {
+        "$type": "System.Collections.Generic.List`1[[HeyHomeModel.Model.Implementation.Channel, HeyHomeModel]], mscorlib",
+        "$values": [
+          {
+            "$type": "HeyHomeModel.Model.Implementation.Channel, HeyHomeModel",
+            "ChannelId": 1,
+            "ChannelName": "DISCOVERY",
+            "Current": true
+          },
+          {
+            "$type": "HeyHomeModel.Model.Implementation.Channel, HeyHomeModel",
+            "ChannelId": 2,
+            "ChannelName": "NATIONAL GEOGRAPHIC",
+            "Current": false
+          },
+          {
+            "$type": "HeyHomeModel.Model.Implementation.Channel, HeyHomeModel",
+            "ChannelId": 3,
+            "ChannelName": "MTV",
+            "Current": false
+          },
+          {
+            "$type": "HeyHomeModel.Model.Implementation.Channel, HeyHomeModel",
+            "ChannelId": 4,
+            "ChannelName": "FILMS",
+            "Current": false
+          }
+        ]
+      },
+      "CurrentChannel": "FILMS",
+      "Volume": 99,
+      "Id": 558223,
+      "Consumption": 5.0,
+      "TurnOn": true,
+      "Type": "TV"
+    },
+    {
+      "$type": "HeyHomeModel.Model.Implementation.TV, HeyHomeModel",
+      "ChannelList": {
+        "$type": "System.Collections.Generic.List`1[[HeyHomeModel.Model.Implementation.Channel, HeyHomeModel]], mscorlib",
+        "$values": [
+          {
+            "$type": "HeyHomeModel.Model.Implementation.Channel, HeyHomeModel",
+            "ChannelId": 1,
+            "ChannelName": "DISCOVERY",
+            "Current": true
+          },
+          {
+            "$type": "HeyHomeModel.Model.Implementation.Channel, HeyHomeModel",
+            "ChannelId": 2,
+            "ChannelName": "NATIONAL GEOGRAPHIC",
+            "Current": false
+          },
+          {
+            "$type": "HeyHomeModel.Model.Implementation.Channel, HeyHomeModel",
+            "ChannelId": 3,
+            "ChannelName": "MTV",
+            "Current": false
+          },
+          {
+            "$type": "HeyHomeModel.Model.Implementation.Channel, HeyHomeModel",
+            "ChannelId": 4,
+            "ChannelName": "FILMS",
+            "Current": false
+          }
+        ]
+      },
+      "CurrentChannel": "NATIONAL GEOGRAPHIC",
+      "Volume": 6,
+      "Id": 838216,
+      "Consumption": 12.0,
+      "TurnOn": true,
+      "Type": "TV"
+    }
+  ]
+}
