@@ -19,12 +19,6 @@ namespace HeyHomeModel.Model.Implementation
         }
 
 
-        //public void ChangeChannel(int id)
-        //{
-        //    CurrentChannel.ChannelId = id;
-
-        //}
-
         public void AddChannel(string name)
         {
             var length = ChannelList.Count();
@@ -34,12 +28,10 @@ namespace HeyHomeModel.Model.Implementation
         }
 
         public int Volume { get; set; }
-       // List<Channel> IChannelable.ChannelList { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
 
         public void SetCurrentChanel(string channelName)
         { 
-            //IEnumerable<Channel>channels = ChannelList.Where(ch => ch.ChannelName == channelName);
             foreach (Channel channel in ChannelList)
             {
                 if (channel.ChannelName == channelName)
@@ -76,15 +68,6 @@ namespace HeyHomeModel.Model.Implementation
             throw new NotImplementedException();
         }
 
-
-        //public void SetCurrentChanel(int id)
-        //{
-        //    Channel channel = ChannelList.Where(ch => ch.ChannelId == id).FirstOrDefault();
-        //    if (channel != null)
-        //    {
-        //        CurrentChannel = channel;
-        //    }
-        //}
 
     }
 }

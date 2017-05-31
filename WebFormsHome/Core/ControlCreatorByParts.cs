@@ -26,30 +26,30 @@ namespace WebFormsHome.Core
             List<Channel> channels = Manager.GetChannelList();
             List<Device> devices = devicesList;
             DeviceControl baseCtr ;
-            IDeviceControl CTR;
+            IDeviceControl deviceControl;
 
             if (device is ILightable)
             {
-                CTR = new ILightableControl(device);
+                deviceControl = new ILightableControl(device);
 
-                baseCtr = new DeviceControl(device, devices, CTR, Manager);
+                baseCtr = new DeviceControl(device, devices, deviceControl, Manager);
             }
 
            else  if (device is ITemperature)
             {
-                CTR = new ITemperatureControl(device);
+                deviceControl = new ITemperatureControl(device);
 
-                baseCtr = new DeviceControl(device, devices, CTR, Manager);
+                baseCtr = new DeviceControl(device, devices, deviceControl, Manager);
             }
 
            else if ((device is IVoluable) && (device is IChannelable))
             {
-                IVoluableControl CTR_1 = new IVoluableControl(device);
-                IChannelableControl CTR_2 =new IChannelableControl(channels,device);
+                IVoluableControl voluableControl = new IVoluableControl(device);
+                IChannelableControl channelableControl = new IChannelableControl(channels,device);
 
-                CTR = new ITVControl(CTR_1, CTR_2);
+                deviceControl = new ITVControl(voluableControl, channelableControl);
 
-                baseCtr = new DeviceControl(device, devices, CTR, Manager);
+                baseCtr = new DeviceControl(device, devices, deviceControl, Manager);
             }
 
             else

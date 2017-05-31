@@ -49,11 +49,9 @@ namespace WebFormsHome.Controls
         {
             temperatureLabel = ControlConstructorHelper.GenerateLabel("Temperature: ");
             temperatureTextBox = GenerateTemperatureTextBox();
-            //deviceTypeLabel = GenerateLabel(Device.Type);
 
             Panel innerPanel = new Panel();
             innerPanel.CssClass = "text-center lampCtr";
-            //innerPanel.Controls.Add(ControlConstructorHelper.GenerateBootstrapDiv(deviceTypeLabel, 12));
 
             Panel temperaturePanel = new Panel();
             temperaturePanel.CssClass = "col-md-12 row text-center";

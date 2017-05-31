@@ -61,7 +61,6 @@ namespace WebFormsHome.Core
 
         public List<Channel> GetChannelList()
         {
-           // string json = File.ReadAllText(@"F:\dotNet\Oracle\Projects\HeyHomeModel\WebFormsHome\lib\chanels.json");
             string json = File.ReadAllText(HostingEnvironment.MapPath("~/lib/chanels.json") ); 
 
             List<Channel> channels = JsonConvert.DeserializeObject<List<Channel>>(json);

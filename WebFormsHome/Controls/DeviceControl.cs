@@ -31,7 +31,6 @@ namespace WebFormsHome.Controls
             request = currentReuest;
             this.device = device;
             devices = deviceList;
-           // InitializerBase();
         }
 
         public void InitializerBase()
